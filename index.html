@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Who is the Impostor?</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<canvas id="fondo"></canvas>
+
+<div id="inicio" class="pantalla">
+
+<h1 class="titulo">Who is the Impostor?</h1>
+
+<p class="autor">Creado por Nicolás Quitian</p>
+
+<button id="btnInicio" class="btn-jugar">JUGAR</button>
+
+</div>
+
+<div id="config" class="pantalla hidden">
+
+<h2>Configuración</h2>
+
+<label>Jugadores</label>
+<input type="number" id="jugadores" value="4" min="3" max="12">
+
+<label>Impostores</label>
+<input type="number" id="impostores" value="1" min="1" max="3">
+
+<label>Modo contrarreloj</label>
+
+<select id="modoTiempo">
+<option value="si">Sí</option>
+<option value="no">No</option>
+</select>
+
+<label>Tiempo por turno (segundos)</label>
+<input type="number" id="tiempo" value="15">
+
+<label>Tema</label>
+<select id="tema"></select>
+
+<button id="btnJugar" class="btn">Comenzar</button>
+
+</div>
+
+<div id="palabra" class="pantalla hidden">
+
+<h2 id="jugadorTurno"></h2>
+
+<p id="mensaje"></p>
+
+<div id="timer"></div>
+
+<button id="btnVer" class="btn">Ver palabra</button>
+
+</div>
+
+<div id="ruletaPantalla" class="pantalla hidden">
+
+<h2>La ruleta decide quién empieza</h2>
+
+<div class="ruletaContainer">
+
+<div id="ruleta"></div>
+
+<div class="flecha"></div>
+
+</div>
+
+<p id="empieza"></p>
+
+<button onclick="location.reload()" class="btn">Nueva partida</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

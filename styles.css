@@ -23,6 +23,12 @@ left:0;
 z-index:-1;
 
 }
+#inicio {
+  background-image: url('img/elimpostor.png'); /* ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 #inicio::before {
   content: "";
